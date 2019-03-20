@@ -1,6 +1,16 @@
 [![](https://images.microbadger.com/badges/image/rocker/r-ver.svg)](https://microbadger.com/images/rocker/r-ver "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/rocker/r-ver.svg)](https://microbadger.com/images/rocker/r-ver "Get your own version badge on microbadger.com")
 
+version: 2
+jobs:
+  build:
+    docker:
+      - image: rocker/tidyverse:3.4.3
+    steps:
+      - checkout
+      - run: R --version
+      
+
 
 ## PhenoSynth: An interactive tool to evaluate phenology data across data sources, spatial, and temporal scales
 
