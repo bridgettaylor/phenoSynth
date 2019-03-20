@@ -2,16 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/<language>:<version TAG>
+      - image: circleci/phenoSynth:tagname
     steps:
       - checkout
-      - run: <command>
+      - run: R --version
   test:
     docker:
-      - image: circleci/<language>:<version TAG>
+      - image: circleci/phenoSynth:tagname
     steps:
       - checkout
-      - run: <command>
+      - run: R --version
 workflows:
   version: 2
   build_and_test:
