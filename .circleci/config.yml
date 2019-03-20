@@ -2,13 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/phenoSynth:tagname
+      - image: circleci/phenosynth:tagname
     steps:
       - checkout
       - run: R --version
   test:
     docker:
-      - image: circleci/phenoSynth:tagname
+      - image: circleci/phenosynth:tagname
     steps:
       - checkout
       - run: R --version
