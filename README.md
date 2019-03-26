@@ -1,3 +1,6 @@
+[![](https://images.microbadger.com/badges/image/bridgettaylor/phenosynth.svg)](https://microbadger.com/images/bridgettaylor/phenosynth)
+[![](https://images.microbadger.com/badges/version/bridgettaylor/phenosynth.svg)](https://microbadger.com/images/bridgettaylor/phenosynth)
+[![](https://images.microbadger.com/badges/license/bridgettaylor/phenosynth.svg)](https://microbadger.com/images/bridgettaylor/phenosynth)
 
 ## PhenoSynth: An interactive tool to evaluate phenology data across data sources, spatial, and temporal scales
 
