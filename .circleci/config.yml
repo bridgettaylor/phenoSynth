@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   build:
     docker:
-      - image: circleci/R:latest
+      - image: circleci/phenosynth:latest
     steps:
       - checkout
       - run: 
@@ -10,7 +10,7 @@ jobs:
             . .circleci/setup_circleimg.sh
   test:
     docker:
-      - image: circleci/R:latest
+      - image: circleci/phenosynth:latest
     steps:
       - checkout
       - run: 
