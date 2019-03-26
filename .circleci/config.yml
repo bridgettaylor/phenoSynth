@@ -1,0 +1,25 @@
+version: 1.0
+jobs:
+  build:
+    docker:
+      - image: circleci/R:latest
+    steps:
+      - checkout
+      - run: 
+          command: |
+            . .circleci/setup_circleimg.sh
+  test:
+    docker:
+      - image: circleci/R:latest
+    steps:
+      - checkout
+      - run: 
+          command: |
+            . .circleci/setup_circleimg.sh
+workflows:
+  version: 1.0
+  build_and_test:
+    jobs:
+      - build
+      - test
+      
